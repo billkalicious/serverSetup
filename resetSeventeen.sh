@@ -16,11 +16,8 @@ echo "--- BACKING UP CURRENT SEVENTEEN TO /media/minecraftservers/seventeen-`dat
 cp -r /var/lib/pterodactyl/volumes/d4513c67-0850-4d18-a3a1-ab0c24462760/ /media/minecraftservers/seventeen-`date +%Y%m%d-%H%M`/
 
 echo "--- REMOVING CURRENT SEVENTEEN SERVER"
-#rm -rf /var/lib/pterodactyl/volumes/d4513c67-0850-4d18-a3a1-ab0c24462760
+rm -rf /var/lib/pterodactyl/volumes/d4513c67-0850-4d18-a3a1-ab0c24462760
 
 echo "--- RESTORING SEVENTEEN FROM BACKUP"
 echo "tar -xf $backupFilename -C /var/lib/pterodactyl/volumes/"
-#tar -xf /media/backups/$filename -C /var/lib/pterodactyl/volumes/
-
-
-
+tar -xf $backupFilename -C /var/lib/pterodactyl/volumes/

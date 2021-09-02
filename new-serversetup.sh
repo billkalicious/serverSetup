@@ -64,9 +64,11 @@ echo ""
 read -n1 -r -p "Press any key to continue..." key
 
 
-echo "Creating IAM file..."
-touch $iamFile
-chown pterodactyl:pterodactyl $iamFile
+if ! test -f $iamFile; then
+	echo "Creating IAM file..."
+	touch $iamFile
+	chown pterodactyl:pterodactyl $iamFile
+fi
 
 echo "Copying plugins..."
 cp -r $pluginRepo/* $pluginPath
