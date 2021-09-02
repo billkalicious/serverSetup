@@ -1,0 +1,61 @@
+☲☲☲☲☲☲☲☲☲☲☲☲|☲☲☲☲☲☲☲☲☲☲☲☲
+      &a‖&r&a‖►&bKalicious &l&fSMP&r &dLIVE&a◄‖&r&a‖&r      
+&m                                                             &r      
+
+
+
+
+
+
+
+/deluxehub hologram setline 1 1 ┇┇┇┇┇┇┇┇┇┇┇┇┇┇┇---┇┇┇┇┇┇┇┇┇┇┇┇┇┇┇
+
+
+deluxehub hologram setline 1 1 ☴☴☴☴☴☴☴☴☴☴☴☴|☴☴☴☴☴☴☴☴☴☴☴☴
+deluxehub hologram setline 1 2 &a‖&r&a‖►&bKalicious &l&fSMP&r &dLIVE&a◄‖&r&a‖&r
+deluxehub hologram setline 1 3 Survival 1.17
+deluxehub hologram setline 1 4 ☱☱☱☱☱☱☱☱☱☱☱☱|☱☱☱☱☱☱☱☱☱☱☱☱
+
+/deluxehub hologram setline seventeen 1 ☴☴☴☴☴☴☴☴☴☴☴☴|☴☴☴☴☴☴☴☴☴☴☴☴
+/deluxehub hologram setline seventeen 2 &a‖&r&a‖►&bKalicious &l&fSMP&r &dLIVE&a◄‖&r&a‖&r
+/deluxehub hologram setline seventeen 3 Survival 1.17
+/deluxehub hologram setline seventeen 4 ☱☱☱☱☱☱☱☱☱☱☱☱|☱☱☱☱☱☱☱☱☱☱☱☱
+
+/deluxehub hologram create fourteen
+/deluxehub hologram setline fourteen 1 ☴☴☴☴☴☴☴☴☴☴☴☴|☴☴☴☴☴☴☴☴☴☴☴☴
+/deluxehub hologram setline fourteen 2 &a‖&r&a‖►&bKalicious &l&fSMP&r &dLIVE&a◄‖&r&a‖&r
+/deluxehub hologram addline fourteen Survival 1.14
+/deluxehub hologram addline fourteen ☱☱☱☱☱☱☱☱☱☱☱☱|☱☱☱☱☱☱☱☱☱☱☱☱
+
+
+/deluxehub hologram create fourteen-a
+/deluxehub hologram setline fourteen-a 1 ☴☴☴☴☴☴☴☴☴☴☴☴|☴☴☴☴☴☴☴☴☴☴☴☴
+/deluxehub hologram setline fourteen-a 2 &a‖&r&a‖►&bKalicious &l&fSMP&r &dLIVE&a◄‖&r&a‖&r
+/deluxehub hologram addline fourteen-a Survival 1.14
+/deluxehub hologram addline fourteen-a ☱☱☱☱☱☱☱☱☱☱☱☱|☱☱☱☱☱☱☱☱☱☱☱☱
+
+/deluxehub hologram create sixteen
+/deluxehub hologram setline sixteen 1 ☴☴☴☴☴☴☴☴☴☴☴☴|☴☴☴☴☴☴☴☴☴☴☴☴
+/deluxehub hologram setline sixteen 2 &a‖&r&a‖►&bKalicious &l&fSMP&r &dLIVE&a◄‖&r&a‖&r
+/deluxehub hologram addline sixteen Survival 1.16
+/deluxehub hologram addline sixteen ☱☱☱☱☱☱☱☱☱☱☱☱|☱☱☱☱☱☱☱☱☱☱☱☱
+
+
+/deluxehub hologram create sixteen-a
+/deluxehub hologram setline sixteen-a 1 ☴☴☴☴☴☴☴☴☴☴☴☴|☴☴☴☴☴☴☴☴☴☴☴☴
+/deluxehub hologram setline sixteen-a 2 &a‖&r&a‖►&bKalicious &l&fSMP&r &dLIVE&a◄‖&r&a‖&r
+/deluxehub hologram addline sixteen-a Survival 1.16
+/deluxehub hologram addline sixteen-a ☱☱☱☱☱☱☱☱☱☱☱☱|☱☱☱☱☱☱☱☱☱☱☱☱
+
+/deluxehub hologram create  minigames-a
+/deluxehub hologram setline minigames-a 1 ☴☴☴☴☴☴☴☴☴☴☴☴|☴☴☴☴☴☴☴☴☴☴☴☴
+/deluxehub hologram setline minigames-a 2 &a‖&r&a‖►&bKalicious &l&fSMP&r &dLIVE&a◄‖&r&a‖&r
+/deluxehub hologram addline minigames-a ⇨ MINIGAMES ⇦
+/deluxehub hologram addline minigames-a ☱☱☱☱☱☱☱☱☱☱☱☱|☱☱☱☱☱☱☱☱☱☱☱☱
+
+/deluxehub hologram create  monster
+/deluxehub hologram setline monster 1 ☴☴☴☴☴☴☴☴☴☴☴☴|☴☴☴☴☴☴☴☴☴☴☴☴
+/deluxehub hologram setline monster 2 &a‖&r&a‖►&bKalicious &l&fSMP&r &dLIVE&a◄‖&r&a‖&r
+/deluxehub hologram addline monster ⇨ Monster Industries ⇦
+/deluxehub hologram addline monster ☱☱☱☱☱☱☱☱☱☱☱☱|☱☱☱☱☱☱☱☱☱☱☱☱
+

@@ -1,0 +1,78 @@
+whitelist add P4andaman357
+whitelist add Agradecido
+whitelist add GrahamCracker110
+whitelist add ThatPossiblePOG
+whitelist add boi_over_9000
+
+
+lp user ForeSite group set builder
+lp user P4andaman357 group set builder
+lp user Agradecido group set player
+lp user GrahamCracker110 group set builder
+lp user ThatPossiblePOG group set player
+lp user boi_over_9000 group set player
+lp user Waffle_star357 group set player
+
+# find /var/lib/pterodactyl/volumes/ -iname "_IAM*"
+./4f56c4be-4c0f-438b-82d2-364dd59afd49/_IAM20122013
+./f3ea3c4c-e31a-45b2-88ca-be3acc7bbf12/_IAMTHEHUB
+./aa1ac325-aef7-4213-aec8-d910bb48cc18/_IAMHAVENCRAFT
+./192f6c42-38cf-4548-9173-788ed50317c9/_IAMCREATIVE
+./c657c268-1f0a-42df-9632-b794d286050c/_IAM2016
+./bc29f65a-87ca-4ffd-ab08-bb0f4af81145/_IAMUNFAIR
+./225a51e7-adc2-4801-9dcd-c547bbb28e9e/_IAMTHEHUB
+./a41bf189-6bea-46da-bafa-653a98d32fdc/_IAMBUNGEE
+./e3115ba8-184b-45ef-9505-2b217c4a4f37/_IAMRANDOMIZED
+./cc17f98c-c760-41c7-a809-9eba3aa680d2/_IAM116
+./e2edaf41-a485-4d3c-8532-4b6b4594f8e5/_IAMJAIL
+./d4513c67-0850-4d18-a3a1-ab0c24462760/_IAM117
+./28173b1a-53b4-43ac-98c8-218091f9b92d/_IAM114
+./6d47cf5a-8d6d-47a8-8a89-1cbf6ec5c88b/_IAMMINIGAMES01
+./09de5c54-4802-4dea-ba21-a203ce94bcae/_IAMMINIGAMES02
+
+
+mv ./cc17f98c-c760-41c7-a809-9eba3aa680d2/plugins/ProtocolLib-2.jar ./cc17f98c-c760-41c7-a809-9eba3aa680d2/plugins/ProtocolLib-2.jar.disabled
+mv ./cc17f98c-c760-41c7-a809-9eba3aa680d2/plugins/SuperVanish-*.jar ./cc17f98c-c760-41c7-a809-9eba3aa680d2/plugins/SuperVanish-*.jar.disabled
+
+mv ./cc17f98c-c760-41c7-a809-9eba3aa680d2/plugins/ProtocolLib-2.jar ./cc17f98c-c760-41c7-a809-9eba3aa680d2/plugins/ProtocolLib-2.jar.disabled
+mv ./d4513c67-0850-4d18-a3a1-ab0c24462760/plugins/ProtocolLib-2.jar ./d4513c67-0850-4d18-a3a1-ab0c24462760/plugins/ProtocolLib-2.jar.disabled
+mv ./4f56c4be-4c0f-438b-82d2-364dd59afd49/plugins/ProtocolLib-2.jar ./4f56c4be-4c0f-438b-82d2-364dd59afd49/plugins/ProtocolLib-2.jar.disabled
+mv ./f3ea3c4c-e31a-45b2-88ca-be3acc7bbf12/plugins/ProtocolLib-2.jar ./f3ea3c4c-e31a-45b2-88ca-be3acc7bbf12/plugins/ProtocolLib-2.jar.disabled
+mv ./aa1ac325-aef7-4213-aec8-d910bb48cc18/plugins/ProtocolLib-2.jar ./aa1ac325-aef7-4213-aec8-d910bb48cc18/plugins/ProtocolLib-2.jar.disabled
+mv ./bc29f65a-87ca-4ffd-ab08-bb0f4af81145/plugins/ProtocolLib-2.jar ./bc29f65a-87ca-4ffd-ab08-bb0f4af81145/plugins/ProtocolLib-2.jar.disabled
+mv ./225a51e7-adc2-4801-9dcd-c547bbb28e9e/plugins/ProtocolLib-2.jar ./225a51e7-adc2-4801-9dcd-c547bbb28e9e/plugins/ProtocolLib-2.jar.disabled
+mv ./a41bf189-6bea-46da-bafa-653a98d32fdc/plugins/ProtocolLib-2.jar ./a41bf189-6bea-46da-bafa-653a98d32fdc/plugins/ProtocolLib-2.jar.disabled
+mv ./e3115ba8-184b-45ef-9505-2b217c4a4f37/plugins/ProtocolLib-2.jar ./e3115ba8-184b-45ef-9505-2b217c4a4f37/plugins/ProtocolLib-2.jar.disabled
+mv ./e2edaf41-a485-4d3c-8532-4b6b4594f8e5/plugins/ProtocolLib-2.jar ./e2edaf41-a485-4d3c-8532-4b6b4594f8e5/plugins/ProtocolLib-2.jar.disabled
+mv ./28173b1a-53b4-43ac-98c8-218091f9b92d/plugins/ProtocolLib-2.jar ./28173b1a-53b4-43ac-98c8-218091f9b92d/plugins/ProtocolLib-2.jar.disabled
+mv ./6d47cf5a-8d6d-47a8-8a89-1cbf6ec5c88b/plugins/ProtocolLib-2.jar ./6d47cf5a-8d6d-47a8-8a89-1cbf6ec5c88b/plugins/ProtocolLib-2.jar.disabled
+mv ./09de5c54-4802-4dea-ba21-a203ce94bcae/plugins/ProtocolLib-2.jar ./09de5c54-4802-4dea-ba21-a203ce94bcae/plugins/ProtocolLib-2.jar.disabled
+
+mv ./cc17f98c-c760-41c7-a809-9eba3aa680d2/plugins/SuperVanish-\*.jar.disabled ./cc17f98c-c760-41c7-a809-9eba3aa680d2/plugins/SuperVanish-xx.jar.disabled
+mv ./d4513c67-0850-4d18-a3a1-ab0c24462760/plugins/SuperVanish-\*.jar.disabled ./d4513c67-0850-4d18-a3a1-ab0c24462760/plugins/SuperVanish-xx.jar.disabled
+mv ./4f56c4be-4c0f-438b-82d2-364dd59afd49/plugins/SuperVanish-\*.jar.disabled ./4f56c4be-4c0f-438b-82d2-364dd59afd49/plugins/SuperVanish-xx.jar.disabled
+mv ./f3ea3c4c-e31a-45b2-88ca-be3acc7bbf12/plugins/SuperVanish-\*.jar.disabled ./f3ea3c4c-e31a-45b2-88ca-be3acc7bbf12/plugins/SuperVanish-xx.jar.disabled
+mv ./aa1ac325-aef7-4213-aec8-d910bb48cc18/plugins/SuperVanish-\*.jar.disabled ./aa1ac325-aef7-4213-aec8-d910bb48cc18/plugins/SuperVanish-xx.jar.disabled
+mv ./bc29f65a-87ca-4ffd-ab08-bb0f4af81145/plugins/SuperVanish-\*.jar.disabled ./bc29f65a-87ca-4ffd-ab08-bb0f4af81145/plugins/SuperVanish-xx.jar.disabled
+mv ./225a51e7-adc2-4801-9dcd-c547bbb28e9e/plugins/SuperVanish-\*.jar.disabled ./225a51e7-adc2-4801-9dcd-c547bbb28e9e/plugins/SuperVanish-xx.jar.disabled
+mv ./a41bf189-6bea-46da-bafa-653a98d32fdc/plugins/SuperVanish-\*.jar.disabled ./a41bf189-6bea-46da-bafa-653a98d32fdc/plugins/SuperVanish-xx.jar.disabled
+mv ./e3115ba8-184b-45ef-9505-2b217c4a4f37/plugins/SuperVanish-\*.jar.disabled ./e3115ba8-184b-45ef-9505-2b217c4a4f37/plugins/SuperVanish-xx.jar.disabled
+mv ./e2edaf41-a485-4d3c-8532-4b6b4594f8e5/plugins/SuperVanish-\*.jar.disabled ./e2edaf41-a485-4d3c-8532-4b6b4594f8e5/plugins/SuperVanish-xx.jar.disabled
+mv ./28173b1a-53b4-43ac-98c8-218091f9b92d/plugins/SuperVanish-\*.jar.disabled ./28173b1a-53b4-43ac-98c8-218091f9b92d/plugins/SuperVanish-xx.jar.disabled
+mv ./6d47cf5a-8d6d-47a8-8a89-1cbf6ec5c88b/plugins/SuperVanish-\*.jar.disabled ./6d47cf5a-8d6d-47a8-8a89-1cbf6ec5c88b/plugins/SuperVanish-xx.jar.disabled
+mv ./09de5c54-4802-4dea-ba21-a203ce94bcae/plugins/SuperVanish-\*.jar.disabled ./09de5c54-4802-4dea-ba21-a203ce94bcae/plugins/SuperVanish-xx.jar.disabled
+
+
+cp -r ./d4513c67-0850-4d18-a3a1-ab0c24462760/plugins/PremiumVanish/ ./d4513c67-0850-4d18-a3a1-ab0c24462760/plugins/
+cp -r ./d4513c67-0850-4d18-a3a1-ab0c24462760/plugins/PremiumVanish/ ./cc17f98c-c760-41c7-a809-9eba3aa680d2/plugins/
+cp -r ./d4513c67-0850-4d18-a3a1-ab0c24462760/plugins/PremiumVanish/ ./4f56c4be-4c0f-438b-82d2-364dd59afd49/plugins/
+cp -r ./d4513c67-0850-4d18-a3a1-ab0c24462760/plugins/PremiumVanish/ ./f3ea3c4c-e31a-45b2-88ca-be3acc7bbf12/plugins/
+cp -r ./d4513c67-0850-4d18-a3a1-ab0c24462760/plugins/PremiumVanish/ ./aa1ac325-aef7-4213-aec8-d910bb48cc18/plugins/
+cp -r ./d4513c67-0850-4d18-a3a1-ab0c24462760/plugins/PremiumVanish/ ./bc29f65a-87ca-4ffd-ab08-bb0f4af81145/plugins/
+cp -r ./d4513c67-0850-4d18-a3a1-ab0c24462760/plugins/PremiumVanish/ ./225a51e7-adc2-4801-9dcd-c547bbb28e9e/plugins/
+cp -r ./d4513c67-0850-4d18-a3a1-ab0c24462760/plugins/PremiumVanish/ ./a41bf189-6bea-46da-bafa-653a98d32fdc/plugins/
+cp -r ./d4513c67-0850-4d18-a3a1-ab0c24462760/plugins/PremiumVanish/ ./e3115ba8-184b-45ef-9505-2b217c4a4f37/plugins/
+cp -r ./d4513c67-0850-4d18-a3a1-ab0c24462760/plugins/PremiumVanish/ ./e2edaf41-a485-4d3c-8532-4b6b4594f8e5/plugins/
+cp -r ./d4513c67-0850-4d18-a3a1-ab0c24462760/plugins/PremiumVanish/ ./28173b1a-53b4-43ac-98c8-218091f9b92d/plugins/
+cp -r ./d4513c67-0850-4d18-a3a1-ab0c24462760/plugins/PremiumVanish/ ./6d47cf5a-8d6d-47a8-8a89-1cbf6ec5c88b/plugins/
+cp -r ./d4513c67-0850-4d18-a3a1-ab0c24462760/plugins/PremiumVanish/ ./09de5c54-4802-4dea-ba21-a203ce94bcae/plugins/
