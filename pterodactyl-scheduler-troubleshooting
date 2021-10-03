@@ -1,0 +1,90 @@
+mysql --host=database --port=3306 --user=kalicioussmp --password=kuvxo8-wYspiw-muPkeh --default-character-set=utf8mb4 pterodb
+select server_id, cron_hour, cron_minute, is_active, is_processing, last_run_at, next_run_at from schedules where server_id = 33;
+
+BEFORE EXECUTION
+MariaDB [pterodb]> select server_id, cron_hour, cron_minute, is_active, is_processing, last_run_at, next_run_at 
+from schedules where server_id = 33;
++-----------+-----------+-------------+-----------+---------------+---------------------+---------------------+
+| server_id | cron_hour | cron_minute | is_active | is_processing | last_run_at         | next_run_at         |
++-----------+-----------+-------------+-----------+---------------+---------------------+---------------------+
+|        33 | *         | */2         |         1 |             0 | NULL                | 2021-08-27 09:04:00 |
++-----------+-----------+-------------+-----------+---------------+---------------------+---------------------+
+2 rows in set (0.001 sec)
+
+
+TASK EXECUTED AT 4:04AM CDT
+
+
+MariaDB [pterodb]> select server_id, cron_hour, cron_minute, is_active, is_processing, last_run_at, next_run_at 
+from schedules where server_id = 33;
++-----------+-----------+-------------+-----------+---------------+---------------------+---------------------+
+| server_id | cron_hour | cron_minute | is_active | is_processing | last_run_at         | next_run_at         |
++-----------+-----------+-------------+-----------+---------------+---------------------+---------------------+
+|        33 | *         | */2         |         1 |             0 | 2021-08-27 15:04:01 | 2021-08-27 15:06:00 |
++-----------+-----------+-------------+-----------+---------------+---------------------+---------------------+
+2 rows in set (0.001 sec)
+
+
+TASK EXECUTED AT 10:06AM CDT
+
+
+MariaDB [pterodb]> select server_id, cron_hour, cron_minute, is_active, is_processing, last_run_at, next_run_at 
+from schedules where server_id = 33;
++-----------+-----------+-------------+-----------+---------------+---------------------+---------------------+
+| server_id | cron_hour | cron_minute | is_active | is_processing | last_run_at         | next_run_at         |
++-----------+-----------+-------------+-----------+---------------+---------------------+---------------------+
+|        33 | *         | */2         |         1 |             0 | 2021-08-27 21:06:03 | 2021-08-27 21:08:00 |
++-----------+-----------+-------------+-----------+---------------+---------------------+---------------------+
+2 rows in set (0.000 sec)
+
+
+Line 128 in RunTaskJob.php has this, which I think is part of where my issue is happening: 'last_run_at' => CarbonImmutable::now()->toDateTimeString(),
+Where does this pull the timezone?
+
+
+Line 128 in RunTaskJob.php
+    /**
+     * Marks the parent schedule as being complete.
+     */
+    private function markScheduleComplete()
+    {
+        $this->task->schedule()->update([
+            'is_processing' => false,
+--------->> 'last_run_at' => CarbonImmutable::now()->toDateTimeString(),
+        ]);
+    }
+
+
+Things checked: 
+APP_TIMEZONE is CDT in panel.
+The scheduler shows the correct last run time and the next run time based on the cron info.  The servers are all in the correct timezone.
+#Wings timezone (I've heard has nothing to do with the scheduler) is set correct on one node but not the other, which is running in a container.  No values for timezone in config.yml work except UTC.
+
+cron info: */2 * * * *
+DB-schedules: last_run_at: null | next_run_at: 09:04
+Task runs at 04:04AM CDT
+DB-schedules: last_run_at: 15:04 | next_run_at: 15:06
+Task runs at 10:06AM CDT
+DB-schedules: last_run_at: 21:06 | next_run_at: 21:08
+
+
+
+Cannot get wings container to start up with any value other than UTC for timezone in /etc/pterodactyl/config.yml 
+have tried CDT, America/Chicago, CT, CST
+
+unknown time zone CST the supplied timezone CST is invalid
+
+
+$schedules = Schedule::query()->with('tasks')
+            ->where('is_active', true)
+            ->where('is_processing', false)
+            ->whereRaw('next_run_at <= NOW()')
+            ->get();
+
+
+select server_id, cron_hour, cron_minute, is_active, is_processing, last_run_at, next_run_at from schedules where server_id = 33 and next_run_at <=	CURDATE();
+
+
+
+I've set the timezone (using timedatectl) of both servers ptero01 (with panel and wings) and ptero02 (just wings).
+I've set /etc/pterodactyl/config.yml

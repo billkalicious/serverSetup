@@ -1,4 +1,5 @@
 #!/bin/bash
+# captureTheFlagReset.sh
 
 # server guid
 serverPath="53313a5b-a739-4771-9cfc-0b518517ad33"
