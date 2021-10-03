@@ -11,3 +11,4 @@ cd /srv
 sudo mkdir -p /media/minecraftservers/pterodactyl
 
 tar zcf /media/minecraftservers/pterodactyl/pterodactyl_panel-`date +%Y%m%d-%H%M`.tar.gz pterodactyl
+tar zcf /media/minecraftservers/pterodactyl/nginx-`date +%Y%m%d-%H%M`.tar.gz /etc/nginx
