@@ -93,6 +93,9 @@ if ! test -f $iamFile; then
 	chown pterodactyl:pterodactyl $iamFile
 fi
 
+[ ! -d "$pluginPath" ] && mkdir "$pluginPath"
+chown pterodactyl:pterodactyl $pluginPath
+
 echo "Copying plugins..."
 cp -r $pluginRepo/* $pluginPath
 
